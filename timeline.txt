@@ -1,0 +1,80 @@
+AI Resume Optimizer – Project Timeline (React + Flask + GPT-4)
+
+=== WEEK 1: CORE INFRASTRUCTURE ===
+
+Day 1–2:
+- Set up React frontend with Tailwind CSS
+- Set up Flask backend with OpenAI key using python-dotenv
+
+Day 3:
+- Build frontend form with two textareas (Resume + Job Description)
+- Add "Optimize" button
+
+Day 4:
+- Create Flask POST endpoint `/optimize`
+- Accept resume and job desc in JSON payload
+
+Day 5:
+- Connect frontend to backend using Axios
+- Send inputs from form to Flask API
+
+Day 6:
+- Write basic prompt to send to OpenAI for match scoring and suggestions
+- Test with hardcoded resume/job text
+
+Day 7:
+- Parse and return GPT output in JSON
+- Display results in frontend (raw output)
+
+
+=== WEEK 2: AI LOGIC + POLISHING ===
+
+Day 8:
+- Write separate prompts for:
+    - Match score (0–100)
+    - Suggestions for improvement
+    - Bullet point rewriting
+
+Day 9:
+- Format GPT output into:
+    - score_before
+    - score_after
+    - suggestions
+    - rewritten_bullets
+
+Day 10:
+- Build frontend sections to display:
+    - Score
+    - Suggestions
+    - Before/After resume bullets
+
+Day 11:
+- Style layout using Tailwind
+- Organize UI into cards, sections, or tabs
+
+Day 12:
+- Add error handling and loading spinners
+- Disable "Optimize" button on submit
+
+Day 13:
+- Add comparison logic (score delta, % change)
+- Display “+X% improvement” UI element
+
+Day 14:
+- Finalize frontend/backend connection
+- Test full flow end-to-end with sample data
+
+
+=== WEEK 3: METRICS + DEPLOYMENT ===
+
+Day 15–16:
+- Create Python script to run batch tests
+- Feed in multiple resume/job pairs
+- Get score_before and score_after for each
+
+Day 17:
+- Calculate average and max % score improvement
+- Log as metrics for resume bullet points
+
+Day 18:
+- Add small chart or
